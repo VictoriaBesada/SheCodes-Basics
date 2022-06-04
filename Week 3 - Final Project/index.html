@@ -1,12 +1,324 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <script
+      src="https://kit.fontawesome.com/26443c5d31.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Assistant:wght@200;500;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+      rel="stylesheet"
+    />
     <title>SheCodes | Final Project</title>
-</head>
-<body>
-    
-</body>
+    <style>
+      body {
+        text-align: center;
+        margin: 0;
+        padding: 0;
+      }
+
+      .heading {
+        background-image: linear-gradient(
+            to bottom,
+            rgba(255, 255, 255, 0.5),
+            rgba(117, 19, 93, 0)
+          ),
+          url("https://scontent.fepa9-2.fna.fbcdn.net/v/t39.30808-6/286033783_175851484840483_6204371869532848044_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=730e14&_nc_ohc=31t1CLEY7tQAX_kiNBS&tn=iRYUQCTsglkH41n9&_nc_ht=scontent.fepa9-2.fna&oh=00_AT9ZRcXwy9qKOc4xUooXFMCR8JpwOVqf72JDQdfXplVr1Q&oe=629F5AA5");
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 115vh;
+        border-radius: 0 0 90% 90%/0 0 25% 25%;
+        margin: 0%;
+        color: black;
+      }
+
+      .heading h1 {
+        font-size: 14rem;
+        font-family: "Bebas Neue", cursive;
+        margin: 0 !important;
+        padding-top: 100px;
+        float: inline-end;
+      }
+
+      .heading h2 {
+        font-size: 5rem;
+        font-weight: 200;
+        font-family: "Assistant", sans-serif;
+      }
+
+      .mateMeaning, .makingMate {
+        margin: 5rem 10rem;
+        font-family: "Assistant", sans-serif;
+      }
+
+      .mateMeaning h3,
+      .makingMate h3 {
+        font-size: 3em;
+        font-weight: 200;
+      }
+
+      .mateMeaning p {
+        font-size: 26px;
+        font-weight: 200;
+      }
+
+      .makingMate p {
+        font-size: 20px;
+        font-weight: 200;
+      }
+
+      .steps {
+        padding: 15px 20px;
+        margin-bottom: 4rem;
+      }
+
+      .steps img {
+        margin: 0px 15px 15px 0px;
+        width: 150px;
+      }
+
+      .steps p {
+        text-align: justify;
+        text-indent: 2em;
+        display: block;
+      }
+
+      .image-right {
+        float: right;
+      }
+
+      .image-left {
+        float: left;
+      }
+
+      .tryMate {
+        background: rgb(255, 255, 255);
+        background: linear-gradient(
+          0deg,
+          rgba(255, 255, 255, 1) 0%,
+          rgba(252, 186, 106, 1) 100%
+        );
+        height: 10vh;
+        margin: 0 auto;
+        padding-top: 2rem;
+        padding-bottom: 4rem;
+        border-radius: 90% 90% 0 0/25% 25% 0 0;
+        font-size: 20px;
+        font-family: "Assistant", sans-serif;
+        font-weight: 400;
+      }
+
+      .mate{
+        font-family: "Bebas Neue", cursive;
+        font-size: 30px;
+      }
+
+      .btn-grad {
+        background-image: linear-gradient(
+          to right,
+          #fe8c00 0%,
+          #f83600 51%,
+          #fe8c00 100%
+        );
+        margin: 10px;
+        padding: 15px 45px;
+        text-transform: uppercase;
+        transition: 0.5s;
+        background-size: 200% auto;
+        color: white;
+        box-shadow: 0 0 20px #eee;
+        border-radius: 10px;
+        border: none;
+        font-weight: 600;
+      }
+
+      .btn-grad:hover {
+        background-position: right center; /* change the direction of the change here */
+        color: #fff;
+        text-decoration: none;
+        cursor: pointer;
+      }
+
+      .signature {
+        font-family: monospace;
+        font-size: 1rem;
+        padding: 2rem;
+      }
+
+      .linkedin-icon {
+        color: black;
+      }
+
+      .fa-brands:hover {
+        color: #0a65c2;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="heading">
+      <h1>Mate</h1>
+      <h2>the national argentinian drink</h2>
+    </header>
+
+    <main>
+      <div class="mateMeaning">
+        <h3>What is a <em>mate</em>?</h3>
+        <p>
+          It is a traditional South American drink and it can also be found in
+          Uruguay, parts of Chile and Bolivia, Paraguay and Brazil. This
+          caffeine-rich infused drink is made from dried leaves called yerba
+          mate mixed with hot water. Yerba mate leaves are dried chopped and
+          ground into a powder. It is then drunk through a metal straw
+          (traditionally silver) known in Argentina as a Bombilla. Also, the
+          reason why you often see people carrying big thermo flasks when they
+          drink mate it is because they want to keep the water warm as the mate
+          is always refilled several times.
+        </p>
+        <hr />
+      </div>
+
+
+      <div class="makingMate">
+        <h3>How to make a mate</h3>
+        <div class="steps">
+          <h4>First step</h4>
+          <img
+            src="https://www.mate-tee.de/images/zubereitung/preparacion-mate02.png"
+            alt=""
+            class="image-left"
+          />
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime,
+            beatae labore facilis aliquam nisi doloribus voluptatum explicabo
+            quod atque quis dicta officia ipsa voluptatem! Sed exercitationem
+            nobis quasi molestiae odio.
+          </p>
+        </div>
+        <div class="steps">
+          <h4>Second step</h4>
+          <img
+            src="https://www.mate-tee.de/images/zubereitung/preparacion-mate03.png"
+            alt=""
+            class="image-right"
+          />
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime,
+            beatae labore facilis aliquam nisi doloribus voluptatum explicabo
+            quod atque quis dicta officia ipsa voluptatem! Sed exercitationem
+            nobis quasi molestiae odio.
+          </p>
+        </div>
+        <div class="steps">
+          <h4>Third step</h4>
+          <img
+            src="https://www.mate-tee.de/images/zubereitung/preparacion-mate04.png"
+            alt=""
+            class="image-left"
+          />
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime,
+            beatae labore facilis aliquam nisi doloribus voluptatum explicabo
+            quod atque quis dicta officia ipsa voluptatem! Sed exercitationem
+            nobis quasi molestiae odio.
+          </p>
+        </div>
+        <div class="steps">
+          <h4>Fourth step</h4>
+          <img
+            src="https://www.mate-tee.de/images/zubereitung/preparacion-mate05.png"
+            alt=""
+            class="image-right"
+          />
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime,
+            beatae labore facilis aliquam nisi doloribus voluptatum explicabo
+            quod atque quis dicta officia ipsa voluptatem! Sed exercitationem
+            nobis quasi molestiae odio.
+          </p>
+        </div>
+        <div class="steps">
+          <h4>Fifth step</h4>
+          <img
+            src="https://www.mate-tee.de/images/zubereitung/preparacion-mate06.png"
+            alt=""
+            class="image-left"
+          />
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime,
+            beatae labore facilis aliquam nisi doloribus voluptatum explicabo
+            quod atque quis dicta officia ipsa voluptatem! Sed exercitationem
+            nobis quasi molestiae odio.
+          </p>
+        </div>
+        <div class="steps">
+          <h4>Last step</h4>
+          <img
+            src="https://www.mate-tee.de/images/zubereitung/preparacion-mate07.png"
+            alt=""
+            class="image-right"
+          />
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime,
+            beatae labore facilis aliquam nisi doloribus voluptatum explicabo
+            quod atque quis dicta officia ipsa voluptatem! Sed exercitationem
+            nobis quasi molestiae odio.
+          </p>
+        </div>
+        <br />
+      </div>
+
+      <div class="tryMate">
+        <a href></a>
+        <p>Do you want to try an authentic argentinian <span class="mate">mate?</span></p>
+        <button class="btn-grad">Send me one!</button>
+      </div>
+    </main>
+
+    <footer>
+      <hr />
+      <p class="signature">
+        Coded by <strong>Victoria Besada </strong>|
+        <a
+          href="https://www.linkedin.com/in/victoriabesada/"
+          target="_blank"
+          class="linkedin-icon"
+          ><i class="fa-brands fa-linkedin-in"></i
+        ></a>
+      </p>
+    </footer>
+
+    <script>
+      function sendMate() {
+        let name = prompt("What is your name?");
+        let continent = prompt("What continent do you live in?");
+        continent = continent.toLowerCase().trim();
+
+        if (continent === "europe") {
+          let address = prompt("What is your address?");
+          alert(
+            `Hi ${name}! We are preparing your order. As soon as it is ready we will be sending it to ${address}. Get ready!`
+          );
+        } else {
+          alert(
+            `Sorry ${name}, we are unable to ship mates to ${continent} at the moment💔`
+          );
+        }
+      }
+
+      let getMateButton = document.querySelector("button");
+      getMateButton.addEventListener("click", sendMate);
+    </script>
+  </body>
 </html>
