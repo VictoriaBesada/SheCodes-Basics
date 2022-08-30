@@ -7,5 +7,5 @@ As my final project I was asked to build a landing page using HTML, CSS and Java
 
 ***
 
-Feel free to check my website and give your feedback!
+Feel free to check my website and give me your feedback!
 
